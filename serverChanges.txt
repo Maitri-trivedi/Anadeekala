@@ -1,0 +1,1 @@
+<!--<link rel="manifest" href="img/favicon/manifest.webmanifest">--> ----line 23
