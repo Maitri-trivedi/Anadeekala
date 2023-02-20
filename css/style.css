@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto+Mono:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
 body{
     background-color: #FBE6C2;
     /* padding: 0; */
@@ -143,6 +143,9 @@ hr{
     color: #FFFF;
 }
 .contact-content-middle{
+    padding: 0 10%;
+}
+.contact-content-contact-us{
     padding: 0 7%;
 }
 .form-input{
@@ -153,4 +156,252 @@ hr{
     padding: 10px 20px;
     font-size: 1rem;
     font-weight: bold;
+    border-radius: 0;
+}
+.copyright{
+    margin-top: 7%;
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.footer .container{
+    padding-bottom: 20px;
+}
+
+
+/* --------------------------------------CAROUSEL CSS--------------------------------- */
+
+/*google font*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
+
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	padding:25px 0;
+}
+.navbar .logo{
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: 750;
+	letter-spacing: 2px;
+}
+.navbar ul.nav{
+	margin-right: 15%;
+}
+.navbar ul.nav li.active,
+.navbar ul.nav li:hover{
+	background:rgba(255, 255, 255, 0.5);
+	color: #000;
+
+}
+.navbar ul.nav li a{
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a{
+	color: #000;
+} */
+
+/*slider*/
+
+#carouselExampleIndicators{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	/* background: rgba(0, 0, 0, 0.45); */
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url('D:/Anadeekala/assests/images/img-slider-1.jpg');
+	background-size: cover;
+	background-position:left;
+	background-attachment: fixed;
+    background-attachment: fixed;
+    background-color: #898271;
+    background-blend-mode: multiply;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+	background: url('D:/Anadeekala/assests/images/img-slider-2.jpg');
+    position: relative;
+	height: 100%;
+	width:100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-attachment: fixed;
+    background-color: #898271;
+    background-blend-mode: multiply;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+	background: url('D:/Anadeekala/assests/images/img-slider-3.jpg');
+    position: relative;
+	height: 100%;
+	width:100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-attachment: fixed;
+    background-color: #898271;
+    background-blend-mode: multiply;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(4){
+	background: url('D:/Anadeekala/assests/images/img-slider-4.jpg');
+    position: relative;
+	height: 100%;
+	width:100%;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    background-attachment: fixed;
+    background-color: #898271;
+    background-blend-mode: multiply;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top:40%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: left;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+	height: auto;
+	color: #fff;
+	width: 100%;
+	z-index: 1;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 10px;
+	text-align: left;
+	font-size: 6rem;
+	font-weight: bold;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+	height: auto;
+	color: #e3e3e3;
+	width: 50%;
+	z-index: 1;
+    font-family: 'Roboto', sans-serif;
+	text-align: left;
+	font-size: 1.2rem;
+    letter-spacing: 5px;
+	font-weight: 400;
+    margin-top: 3%;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .redifing-fashion{
+	height: auto;
+	color: #e3e3e3;
+	width: 50%;
+	z-index: 1;
+    font-family: 'Dancing Script', cursive;
+	text-align: left;
+	font-size: 1.2rem;
+    letter-spacing: 0;
+    margin-top: 0;
+	font-weight: 100;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .info hr{
+    height: 3px;
+    top: 45%;
+    margin-top: 0;
+}
+.btn-shop{
+    margin-top: 2%;
+    padding: 15px 20px;
+    color: #AC0D0D;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 0;
+}
+.carousel-control-prev, .carousel-control-next{
+    z-index: 1;
+}
+
+
+/* -----------------------------------------------------------ABOUT PAGE------------------------------------------------- */
+.about-slider #carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+    /* background: rgba(0, 0, 0, 0.45); */
+	background: url('D:/Anadeekala/assests/images/about-slider-1.jpg');
+	background-size: cover;
+	background-position:left;
+	background-attachment: fixed;
+    background-color: #898271;
+    background-blend-mode: multiply;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item .about-info h1{
+	width: 80%;
+	font-size: 5rem;
+}
+.story h5{
+    color: #AC0D0D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #AC0D0D;
+    letter-spacing: 10px;
+}
+.about-story-content .story-content{
+    margin-top: 0;
+}
+.about-story-content{
+    margin-top: 5%;
+}
+
+
+/* ------------------------------------------------------FACTORY PAGE---------------------------------------------------- */
+.factory-slider #carouselExampleIndicators .carousel-inner .carousel-item{
+    position: relative;
+	height: 100%;
+	width:100%;
+    /* background: rgba(0, 0, 0, 0.45); */
+	background: url('D:/Anadeekala/assests/images/factory-slider-1.jpeg');
+	background-size: cover ;
+	background-position:left;
+	/* background-attachment: fixed; */
+    background-color: #898271;
+    background-blend-mode: multiply;
+}
+.factory-story-content .story-content{
+    margin-top: 0;
+}
+.factory-story-content{
+    margin-top: 5%;
+}
+.factory-story-content .story-content p{
+    margin-top: 7%;
+    letter-spacing: 2px;
+    width: 80%;
+    padding: 2%;
+    text-align: left;
 }
